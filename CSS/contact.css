@@ -1,0 +1,327 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --text-dark: #333; 
+  --background-teal: teal; 
+  --Light-text-color :#eee;
+  --white: #fff; 
+  --black: #000000; 
+  --gray-background-color:#555555;
+  --light-gray-background: #f4f4f4; 
+  --dark-background-color: #343434; 
+  --Slightly-darker-text-for-paragraphs:#ccc;
+  --primary-brand-color: #8e7754; 
+  --secondary-brand-color: #aa8d62; 
+  --shadow-color-light: rgba(0,0,0,0.05); 
+}
+.navbar {
+  box-shadow:  0 2px 5px var(--shadow-color-light);
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  /* background-color: teal; */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+
+}
+  
+  img {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: 50%;
+    margin-top: -18px;
+ 
+}
+
+.nav-links {
+  list-style: none;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-size: 20px;
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  justify-content: space-around;
+  margin-left:60%;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+      color: var(--white);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+      color:var(--secondary-brand-color);
+}
+
+/* --- Page Hero Section --- */
+.page-hero {
+    background: url("../IMAJES/drew-coffman-1872.jpg") center center/cover no-repeat;
+    height: 300px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 50px;
+}
+
+.page-hero h1 {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Contact Content Section --- */
+.contact-content-section {
+    padding: 40px 0;
+}
+
+.contact-columns-wrapper {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;
+    align-items: flex-start; 
+}
+
+.contact-form-column,
+.contact-info-column {
+    flex: 1; 
+    min-width: 300px; 
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-column h2,
+.contact-info-column h2 {
+    font-size: 2em;
+    color: var(--text-dark);
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* Contact Form Styling */
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 0; 
+    border: none;
+    border-bottom: 1px solid var(--Slightly-darker-text-for-paragraphs); 
+    font-size: 1em;
+    color: #555;
+    background-color: transparent; 
+    outline: none; 
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: var(--primary-brand-color); 
+}
+
+.contact-form textarea {
+    resize: vertical; 
+}
+
+.contact-form .submit-button {
+    display: inline-block;
+    background-color: var(--gray-background-color); 
+    color: var(--white);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.contact-form .submit-button:hover {
+    background-color: var(--primary-brand-color); 
+}
+
+/* Contact Info Styling */
+.info-list .info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.info-list .info-item .icon {
+    font-size: 1.5em;
+    color: var(--dark-background-color); 
+    margin-right: 15px;
+    flex-shrink: 0;
+    width: 25px; 
+    text-align: center;
+}
+
+.info-list .info-item p {
+    margin: 0;
+    color: #555;
+    font-size: 1em;
+}
+
+.contact-map {
+    margin-top: 30px;
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 300px; 
+    border: 0;
+}
+/* footer */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+/* footer */
+.site-footer {
+    background-color:var(--dark-background-color); 
+    padding: 40px 20px;
+    color: var(--Light-text-color); 
+}
+
+
+.footer-top-section {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding-bottom: 40px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-column {
+    flex: 1; 
+    min-width: 250px; 
+    padding: 0 15px; 
+    margin-bottom: 30px; 
+}
+
+.footer-column h3 {
+    color:var(--white); 
+    font-size:25px;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    font-size: 22px;
+    color: var(--Slightly-darker-text-for-paragraphs); 
+}
+
+.footer-column ul li {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color:var(--Slightly-darker-text-for-paragraphs);
+    display: flex; 
+    align-items: flex-start;
+}
+
+.footer-column ul li .icon {
+    margin-right: 10px;
+    color: var(--white); 
+    font-size: 22px;
+    min-width: 25px; 
+    text-align: center;
+}
+
+
+.footer-middle-section {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #444; 
+}
+
+.footer-logo {
+    font-size: 20px; 
+    font-weight: bold;
+    color: var(--white); 
+    display: inline-flex; 
+    align-items: center;
+}
+
+.footer-logo .chef {
+    font-size: 22px; 
+    margin-right: 10px;
+    color:var(--white);
+}
+
+.footer-bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 20px;
+    color: var(--Slightly-darker-text-for-paragraphs)
+}
+
+.footer-bottom-section p {
+    font-size: 25px;
+    justify-content: center;
+    margin-top: 0;
+    
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    color: var(--white);
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    background-color: #555; 
+    margin-right: 70px;
+ 
+}
+
+.social-icons a:hover {
+    background-color: var(--secondary-brand-color);
+}

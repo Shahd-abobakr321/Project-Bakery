@@ -1,0 +1,270 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  --text-dark: #333; 
+  --background-teal: teal; 
+  --Light-text-color :#eee;
+  --white: #fff; 
+  --black: #000000; 
+  --gray-background-color:#555555;
+  --light-gray-background: #f4f4f4; 
+  --dark-background-color: #343434; 
+  --Slightly-darker-text-for-paragraphs:#ccc;
+  --primary-brand-color: #8e7754; 
+  --secondary-brand-color: #aa8d62; 
+  --shadow-color-light: rgba(0,0,0,0.05); 
+}
+
+
+
+/* Navbar */
+
+.navbar {
+  box-shadow:  0 2px 5px var(--shadow-color-light);
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+
+}
+  
+  img {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: 50%;
+    margin-top: -18px;
+ 
+}
+
+.nav-links {
+  list-style: none;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-size: 20px;
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  justify-content: space-around;
+  margin-left:60%;
+}
+
+.nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+      color: var(--white);
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+      color:var(--secondary-brand-color);
+}
+
+/* Hero Section */
+.hero {
+   background-image: url(../IMAJES/drew-coffman-1872.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  color: var(--white);
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn-1 {
+  background-color:var(--primary-brand-color);;
+  color:var(--white);
+  font-family: "Alegreya ";
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  padding: 15px 28px;
+  margin-left: 12px;
+  margin-top: 30px;
+}
+
+.btn-1:hover {
+  background-color:var(--white);
+  color: var(--black);
+}
+
+.btn-2 {
+  color: var(--white);
+  font-family: "Alegreya ";
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 2px solid  var(--white);
+  padding: 15px 28px;
+  margin-left: 12px;
+  margin-top: 30px;
+
+}
+
+.btn-2:hover {
+  background-color: var(--white);
+  color:var(--black);
+}
+
+
+
+/* footer */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Inherit color from parent */
+}
+
+
+.site-footer {
+    background-color:var(--dark-background-color); 
+    padding: 40px 20px;
+    color: var(--Light-text-color); 
+}
+
+
+.footer-top-section {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding-bottom: 40px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-column {
+    flex: 1; 
+    min-width: 250px; 
+    padding: 0 15px; 
+    margin-bottom: 30px; 
+}
+
+.footer-column h3 {
+    color:var(--white); 
+    font-size:25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-column p {
+    font-size: 22px;
+    color: var(--Slightly-darker-text-for-paragraphs); 
+}
+
+.footer-column ul li {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color:var(--Slightly-darker-text-for-paragraphs);
+    display: flex; 
+    align-items: flex-start;
+}
+
+.footer-column ul li .icon {
+    margin-right: 10px;
+    color: var(--white); 
+    font-size: 22px;
+    min-width: 25px; 
+    text-align: center;
+}
+
+
+.footer-middle-section {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #444; 
+}
+
+.footer-logo {
+    font-size: 20px; 
+    font-weight: bold;
+    color: var(--white); 
+    display: inline-flex; 
+    align-items: center;
+}
+
+.footer-logo .chef {
+    font-size: 22px; 
+    margin-right: 10px;
+    color:var(--white);
+}
+
+.footer-bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-size: 20px;
+    color: var(--Slightly-darker-text-for-paragraphs)
+}
+
+.footer-bottom-section p {
+    font-size: 25px;
+    justify-content: center;
+    margin-top: 0;
+    
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons a {
+    color: var(--white);
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+    background-color: #555; 
+    margin-right: 70px;
+ 
+}
+
+.social-icons a:hover {
+    background-color: var(--secondary-brand-color);
+}
