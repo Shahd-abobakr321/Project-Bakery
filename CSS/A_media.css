@@ -1,0 +1,47 @@
+
+/* mobile*/
+@media (max-width: 768px) {
+  .section-header h2 {
+    font-size: 20px;
+  }
+
+  .section-header p {
+    font-size: 1em;
+  }
+
+  .baking-items-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .baking-item {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* Tablet*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section-header h2 {
+    font-size: 22px;
+  }
+
+  .baking-items-container {
+    justify-content: space-between;
+  }
+
+  .baking-item {
+    flex: 0 0 45%;
+  }
+}
+
+/* Desctop */
+@media (min-width: 1025px) {
+  .section-header h2 {
+    font-size: 25px;
+  }
+
+  .baking-item {
+    flex: 0 0 30%; 
+  }
+}

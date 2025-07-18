@@ -25,7 +25,6 @@
   position: fixed;
   width: 100%;
   z-index: 100;
-  /* background-color: teal; */
 }
 
 .container {
@@ -76,7 +75,7 @@
 /* --- Page Hero Section --- */
 .page-hero {
     background: url("../IMAJES/drew-coffman-1872.jpg") center center/cover no-repeat;
-    height: 300px; /* Adjust height as needed */
+    height: 300px; 
     display: flex;
     justify-content: center;
     align-items: center;
